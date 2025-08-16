@@ -1,0 +1,8 @@
+# from|to|condition
+O 0 everywhere
+0 O everywhere
+l 1 everywhere
+1 l everywhere
+- − everywhere
+' ’ everywhere
+" ” everywhere

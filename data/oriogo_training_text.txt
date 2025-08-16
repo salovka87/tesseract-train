@@ -1,0 +1,39 @@
+# === ORIOGO TRAINING TEXT ===
+abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ áéěíóúůýčďňřšťž ÁÉĚÍÓÚŮÝČĎŇŘŠŤŽ äôĺľŕ ÄÔĹĽŔ ąćęłńóśźż ĄĆĘŁŃÓŚŹŻ äöüß ÄÖÜẞ ăâîșț ĂÂÎȘȚ şţ ŞŢ áéíóöőúüű ÁÉÍÓÖŐÚÜŰ çğışİ ÇĞIİŞ öÖ üÜ åäöæø ÅÄÖÆØ đĐ ćĆ čČ žŽ šŠ āēīōū ģķļņŗ ĀĒĪŌŪ ĢĶĻŅŖ ėęįų ĖĘĮŲ ðÐ þÞ € $ £ ¥ ₺ ₽ Kč zł Ft lei RON HUF PLN CZK EUR USD CHF SEK DKK NOK % ‰ ° × ÷ ± ≤ ≥ µ § № @ # & * ( ) [ ] { } / \ | _ ^ ~ . , : ; ! ? … „ “ ‚ ‘ « » ‹ › - – — − + = 0 1 2 3 4 5 6 7 8 9 NBSP:  NARROW_NBSP:  THIN_SPACE:  FIGURE_SPACE: 
+
+The quick brown fox jumps over the lazy dog.
+Příliš žluťoučký kůň úpěl ďábelské ódy.
+Zażółć gęślą jaźń. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg.
+Învățământ, Țuică, Știință. Árvíztűrő tükörfúrógép. Ça va? İstanbul, İZMİR.
+
+1 234,56 Kč
+1.234,56 €
+1,234.56 USD
+12 345,67 zł
+12.345,67 CHF
+12,345.67 GBP
+0,00 0.00 10,50 10.50
+
+2025-08-16
+16.08.2025
+16/08/2025
+2025/08/16
+2025.08.16
+
+Faktura Proforma Dobropis Daňový doklad Zálohová faktura Variabilní symbol
+IČ IČO DIČ DPH Celkem Bez DPH Včetně DPH Základ DPH Částka Splatnost
+IBAN BIC SWIFT Bankovní účet VS KS SS
+Invoice Proforma Credit note Tax document Variable symbol
+Subtotal Net Total Amount Due Invoice No. Invoice Number VAT Reg. No.
+Steuernummer USt-IdNr. Rechnungsnummer Zahlungsziel Betrag Netto Brutto Skonto
+NIP REGON KRS
+Číslo objednávky Dodavatel Odběratel Příjemce Popis Položky
+Množství Jednotková cena Cena bez DPH Cena s DPH Celková cena
+Order number Supplier Customer Recipient Description Items Quantity Unit price
+
+Částka k úhradě: 12 345,67 Kč  Splatnost: 16.08.2025  Variabilní symbol: 20250816
+Invoice No.: 2025-0816-001  Amount due: €1,234.56  Payment terms: Net 14
+Rechnungsnummer: 2025/0816/DE  Betrag: 1.234,56 €  Zahlungsziel: 14 Tage netto
+Faktura PL #FV/08/2025  Kwota: 12 345,67 zł  Termin płatności: 14 dni
+IBAN: CZ65 0800 0000 0000 1234 5678  BIC/SWIFT: GIBACZPX
+USt-IdNr.: DE123456789  NIP: 5250000000  IČ: 12345678  DIČ: CZ12345678
