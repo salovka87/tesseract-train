@@ -1,0 +1,23 @@
+name: Validate Model (CER/WER)
+on:
+  workflow_dispatch:
+    inputs:
+      MODEL:
+        description: "Model name"
+        default: "oriogo"
+        required: false
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Tesseract
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-eng python3
+      - name: Validate
+        run: |
+          chmod +x scripts/evaluate_ocr.py || true
+          if [ ! -f "./${{ github.event.inputs.MODEL }}.traineddata" ]; then
+            echo "No traineddata in repo root; download from artifacts and place as ./${{ github.event.inputs.MODEL }}.traineddata"; exit 1; fi
+          python3 scripts/evaluate_ocr.py ${{ github.event.inputs.MODEL }}

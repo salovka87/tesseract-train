@@ -1,0 +1,31 @@
+name: Train Oriogo (ubuntu-limited)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Tesseract + deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-eng libleptonica-dev libtesseract-dev             imagemagick poppler-utils fonts-dejavu fonts-noto
+          tesseract --version
+      - name: Demo train (short, may not converge)
+        env:
+          MAX_ITERATIONS: "5000"
+          PSM: "6"
+          FONT_WHITELIST: "Noto Sans,DejaVu Sans"
+        run: |
+          chmod +x scripts/train_oriogo_tesstrain_plus.sh || true
+          ./scripts/train_oriogo_tesstrain_plus.sh || true
+      - name: Upload artifact (if any)
+        uses: actions/upload-artifact@v4
+        with:
+          name: oriogo-traineddata-demo
+          path: |
+            oriogo.traineddata
+            oriogo.*
+          if-no-files-found: warn
