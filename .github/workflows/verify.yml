@@ -1,0 +1,17 @@
+name: Verify (light)
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sanity
+        run: |
+          echo "Repo OK. Workflows connected."
+          tree -a -L 2 || ls -la

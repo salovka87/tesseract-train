@@ -1,0 +1,29 @@
+name: Preprocess Dataset (PDF/PNG -> TIFF)
+on:
+  workflow_dispatch:
+    inputs:
+      DPI:
+        description: "Render DPI"
+        default: "600"
+        required: false
+jobs:
+  preprocess:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick poppler-utils
+      - name: Convert PDFs in dataset/raw to TIFF
+        run: |
+          mkdir -p dataset/real/train dataset/real/val
+          shopt -s nullglob
+          for f in dataset/raw/*.pdf; do
+            base=$(basename "$f" .pdf)
+            magick -density ${{ github.event.inputs.DPI }} "$f" -alpha remove -alpha off -colorspace Gray -threshold 75% -despeckle "dataset/real/train/${base}_%03d.tif"
+          done
+          echo "Done."
+      - name: List output
+        run: |
+          ls -la dataset/real/train || true
